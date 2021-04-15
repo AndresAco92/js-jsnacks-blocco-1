@@ -1,7 +1,10 @@
-var n_Utente = parseInt(prompt('inserisci un numero a 4 cifre:'));
+var n_Utente = prompt('inserisci un numero a 4 cifre:');
+console.log('Questo è il tuo numero: '+ n_Utente)
 
-var arr = [];
-arr.push(n_Utente);
-console.log('Questo è il tuo numero: '+ arr)
+var somma = 0;
 
-var somma = arr.reduce()
+for(var i = 0; i < n_Utente.length; i++){
+  somma += parseInt(n_Utente.charAt(i));
+}
+
+console.log(somma)
